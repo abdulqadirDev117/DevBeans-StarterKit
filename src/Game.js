@@ -43,6 +43,7 @@ function Game(props) {
   }, [start]);
 
   async function scanTag() {
+    console.log('scan Tag');
     await NfcManager.registerTagEvent();
     if (Platform.OS === 'android') {
       androidPromptRef.current.setVisible(true);
