@@ -7,3 +7,4 @@ export * from './search-bar';
 export * from './touchable';
 export * from './checkbox';
 export * from './boxed-checkbox';
+export * from './primaryView';
