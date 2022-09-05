@@ -1,9 +1,9 @@
 import axios from 'axios';
 import _ from 'lodash';
 import EventBus from 'eventing-bus';
-import {Notification} from './';
+import {Notification} from '.';
 
-import Config from 'react-native-config';
+// import Config from 'react-native-config';
 
 const CancelToken = axios.CancelToken;
 
@@ -11,7 +11,7 @@ export class API {
   static headers() {
     return {
       'Content-Type': 'application/json',
-      'X-API-KEY': Config.API_ACCESS_TOKEN,
+      // 'X-API-KEY': Config.API_ACCESS_TOKEN,
       platform: 'mobile',
     };
   }

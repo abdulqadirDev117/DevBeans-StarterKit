@@ -10,23 +10,26 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@react-native-async-storage/async-storage": "^1.17.7",
+    "@react-native-async-storage/async-storage": "^1.17.10",
     "@react-navigation/native": "^6.0.11",
-    "@reduxjs/toolkit": "^1.8.3",
+    "@reduxjs/toolkit": "^1.8.5",
     "axios": "^0.27.2",
     "eventing-bus": "^2.0.1",
     "lodash": "^4.17.21",
     "moment": "^2.29.4",
     "react": "18.0.0",
     "react-native": "0.69.1",
-    "react-native-config": "^1.4.6",
+    "react-native-fast-image": "^8.6.1",
     "react-native-responsive-screen": "^1.4.2",
     "react-native-safe-area-context": "^4.3.1",
     "react-native-scalesheet": "^1.0.2",
     "react-native-screens": "^3.15.0",
     "react-native-vector-icons": "^9.2.0",
     "react-redux": "^8.0.2",
-    "redux": "^4.2.0"
+    "redux": "^4.2.0",
+    "redux-persist": "^6.0.0",
+    "redux-persist-transform-encrypt": "^4.0.0",
+    "redux-thunk": "^2.4.1"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",

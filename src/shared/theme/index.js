@@ -1,6 +1,8 @@
 import {store} from 'shared/store';
-import {RF, WP} from './responsive';
-import {DefaultTheme} from '@react-navigation/native';
+import {WP, HP} from './responsive';
+import GLOBAL_STYLE from './global';
+
+// import {DefaultTheme} from '@react-navigation/native';
 
 const AppTheme = {
   COLORS: {
@@ -8,11 +10,11 @@ const AppTheme = {
     primaryDarkBackground: '#000000',
     // primaryLightBackground: '#F2F5FF',
     primaryBlueBg: '#16275A',
-    primaryGreenBg: '#16275A',
+    primaryGreenBg: '#35D7A1',
     secondaryBackground: 'rgba(202, 202, 202, 0.1)',
     // secondaryDarkBackground: '#393939',
     // secondaryBlueBackground: '#003075',
-    greyLight: '#CACACA',
+    greyLight: '#CACACA', // button bg
     greyDark: '#999999', //text
     secondaryGreyBackground: 'rgba(201, 206, 219, 0.42)',
     secondaryGreyLightBg: '#F5F5F5',
@@ -43,17 +45,20 @@ const AppTheme = {
     // reddishBackground: '#e6d7d7',
   },
   FONTS: {
-    // SIZE: {
-    //   XXLARGE: RF(32),
-    //   XLARGE: RF(24),
-    //   LARGE: RF(20),
-    //   MEDIUM: RF(18),
-    //   SMALL: RF(16),
-    //   XSMALL: RF(14),
-    //   XXSMALL: RF(12),
-    //   XXXSMALL: RF(10),
-    //   XXXXSMALL: RF(8),
-    // },
+    SIZE: {
+      // XXLARGE: RF(32),
+      // XLARGE: RF(24),
+      // LARGE: RF(20),
+      LARGE: WP(4),
+      // MEDIUM: RF(18),
+      MEDIUM: WP(3.5),
+      // SMALL: RF(16),
+      SMALL: WP(3),
+      // XSMALL: RF(14),
+      // XXSMALL: RF(12),
+      // XXXSMALL: RF(10),
+      // XXXXSMALL: RF(8),
+    },
     TYPE: {
       LIGHT: 'Montserrat-Light',
       REGULAR: 'Montserrat-Regular',
@@ -62,17 +67,20 @@ const AppTheme = {
       BOLD: 'Montserrat-Bold',
     },
   },
-  // MARGIN: {
-  //   SUPER_LOW: RF(2),
-  //   VERY_LOW: RF(4),
-  //   LOW: RF(8),
-  //   MID_LOW: RF(12),
-  //   NORMAL: RF(16),
-  //   HIGH: RF(24),
-  //   VERY_HIGH: RF(32),
-  //   SUPER_HIGH: RF(48),
-  //   NOVA_HIGH: RF(60),
-  // },
+  MARGIN: {
+    // SUPER_LOW: RF(2),
+    // VERY_LOW: RF(4),
+    // LOW: RF(8),
+    // MID_LOW: RF(12),
+    MID_LOW: WP(2.5),
+    // NORMAL: RF(16),
+    NORMAL: WP(2.9),
+    // HIGH: RF(24),
+    HIGH: WP(4),
+    // VERY_HIGH: RF(32),
+    // SUPER_HIGH: RF(48),
+    // NOVA_HIGH: RF(60),
+  },
   // PADDING: {
   //   SUPER_LOW: RF(2),
   //   VERY_LOW: RF(4),
@@ -83,32 +91,35 @@ const AppTheme = {
   //   VERY_HIGH: RF(32),
   //   SUPER_HIGH: RF(48),
   // },
-  // RADIUS: {
-  //   BOX: RF(10),
-  //   SMALL_BOX: RF(5),
-  //   OVAL: RF(24),
-  // },
-  // SIZE: {
-  //   BOTTOM: 0,
-  //   BUTTON_WIDTH: WP(85),
-  //   ROOT_WIDTH: WP(100) - RF(24),
-  //   HEADER_BACK: RF(22),
-  //   BUTTON_HEIGHT: RF(55),
-  //   QR: RF(100),
-  //   SMALL_BUTTON_HEIGHT: RF(35),
-  //   FULL_WIDTH: WP(100),
-  //   INTRO_IMAGE: RF(180),
-  //   APP_LOGO: RF(170),
-  //   ICON: RF(15),
-  //   ICON_MEDIUM: RF(18),
-  //   ICON_LARGE: RF(30),
-  //   ICON_XLARGE: RF(50),
-  //   COIN_ICON: RF(50),
-  //   PIN_INPUT: {
-  //     height: RF(60),
-  //     width: RF(40),
-  //   },
-  // },
+  RADIUS: {
+    // BOX: RF(10),
+    BOX: WP(2.2),
+    // SMALL_BOX: RF(5),
+    SMALL_BOX: WP(1.2),
+    // OVAL: RF(24),
+    OVAL: WP(4),
+  },
+  METRICES: {
+    BOTTOM: 0,
+    BUTTON_WIDTH: WP(88),
+    ROOT_WIDTH: WP(100) - HP(4),
+    // HEADER_BACK: RF(22),
+    BUTTON_HEIGHT: WP(14),
+    // QR: RF(100),
+    SMALL_BUTTON_HEIGHT: WP(10),
+    FULL_WIDTH: WP(100),
+    // INTRO_IMAGE: RF(180),
+    // APP_LOGO: RF(170),
+    // ICON: RF(15),
+    // ICON_MEDIUM: RF(18),
+    // ICON_LARGE: RF(30),
+    // ICON_XLARGE: RF(50),
+    // COIN_ICON: RF(50),
+    // PIN_INPUT: {
+    //   height: RF(60),
+    //   width: RF(40),
+    // },
+  },
 };
 
-export {AppTheme};
+export {AppTheme, GLOBAL_STYLE, WP, HP};

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {StyleSheet, Text as NativeText} from 'react-native';
 import ScaleSheet from 'react-native-scalesheet';
-import {FontHelper} from '@helpers';
+import {FontHelper} from '@utils';
 import _ from 'lodash';
 
 class Text extends Component {

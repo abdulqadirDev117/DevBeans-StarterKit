@@ -8,3 +8,5 @@ export * from './touchable';
 export * from './checkbox';
 export * from './boxed-checkbox';
 export * from './primaryView';
+export * from './primaryButton';
+export * from './secondaryButton';
