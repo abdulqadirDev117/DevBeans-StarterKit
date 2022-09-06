@@ -1,10 +1,10 @@
 import React from 'react';
 import {TouchableOpacity, View, ActivityIndicator} from 'react-native';
-import {Text} from '@components'; //absolute paths // aliases
+import {AppText} from '@components'; //absolute paths // aliases
 // import Icon from 'react-native-vector-icons/FontAwesome5';
-import {AppTheme, CENTER_ROW} from '@themes';
+import {AppTheme, CENTER_ROW, WP} from '@themes';
 import styles from './SecondaryButtonStyles';
-import {WP} from '../../theme';
+// import {WP} from '../../theme';
 
 const SecondaryButton = props => {
   const {loading, disabled, title, small} = props;
@@ -74,7 +74,7 @@ const SecondaryButton = props => {
         {props.loading ? (
           <ActivityIndicator color={AppTheme.COLORS.white} />
         ) : (
-          <Text style={[styles.buttonText]}>{title}</Text>
+          <AppText style={[styles.buttonText]}>{title}</AppText>
         )}
       </View>
     </TouchableOpacity>

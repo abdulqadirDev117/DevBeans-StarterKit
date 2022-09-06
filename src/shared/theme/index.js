@@ -1,6 +1,7 @@
 import {store} from 'shared/store';
 import {WP, HP} from './responsive';
 import GLOBAL_STYLE from './global';
+import Images from './images';
 
 // import {DefaultTheme} from '@react-navigation/native';
 
@@ -122,4 +123,4 @@ const AppTheme = {
   },
 };
 
-export {AppTheme, GLOBAL_STYLE, WP, HP};
+export {AppTheme, GLOBAL_STYLE, WP, HP, Images};
